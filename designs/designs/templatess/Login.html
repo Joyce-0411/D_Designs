@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% include 'navbar.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login_page</title>
+</head>
+<style>
+    form{
+    bg-(0,125,215);
+    text-align:center;
+    height:auto;
+    width:auto;
+    border: 5px solid blue;
+    border-style:dotted;
+    padding-top:25px;
+    padding-bottom:25px;
+    margin:50px auto;
+    max-width:500px;
+    font-size:20 px;
+    color:Blue;
+    ]
+</style>
+<body style="background-color:White" >
+<h1 style = "text-align: center;font-size:200%;color:Blue;">LOGIN</h1>
+
+<form style = "text-align: center" action ="" method="POST">
+    {% csrf_token %}
+    USERNAME: <input type="text" name="uname"><br><br>
+    PASSWORD: <input type="password" name="passwd"><br><br>
+    <input type="submit" value="LOGIN">
+</form>
+</body>
+{% endblock content %}
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% include 'navbar.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <link rel=stylesheet href="style.css" type="text/css" media=screen />
+    <meta charset="UTF-8">
+    <title>signin</title>
+    <style>
+        body {
+            background-image: url('fall.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form {
+            background-image: url('fall.jpg');
+            text-align: center;
+            border: 5px solid blue;
+            border-style: dotted;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin: 50px auto;
+            max-width: 500px;
+            font-size: 15px;
+            color: Blue;
+        }
+    </style>
+</head>
+<body style="background-color:white" >
+    <br><br><br>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <b>{{ form.username.label }}:{{ form.username }}<br><br></b>
+        <b>{{ form.email.label }}:{{ form.email }}<br><br></b>
+        <b>{{ form.password.label }}:{{ form.password }}<br><br></b>
+
+        <label for="home_type">Tell us About Your Home:</label>
+        <select id="home_type" name="home_type">
+            <option value="1BHK">1BHK</option>
+            <option value="2BHK">2BHK</option>
+            <option value="3BHK">3BHK</option>
+            <option value="Independent home/villa">Other</option>
+        </select>
+
+        {% if messages %}
+        <ul class="messages" >
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <input type="submit" value="REGISTER">
+    </form>
+</body>
+{% endblock content %}
+</html>

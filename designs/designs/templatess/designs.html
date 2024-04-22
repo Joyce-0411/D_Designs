@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% include 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+<html>
+<head>
+<style>
+
+.img-container {
+  float: left;
+  width: 45.55%;
+  padding: 5px;
+  margin:25px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-size{
+    height:300px;
+    width:200px;
+}
+</style>
+</head>
+<body style="background-color:LightBlue" >
+<br><br><br>
+<div class="clearfix">
+  <div class="img-container">
+   <a  href="https://www.livspace.com/in/design-ideas/false-ceiling-designs">
+  <img class="img-size"   src="{% static 'hh.jpg' %}" style="width:100%"></a>
+  <div class="desc" style="background-color:White;font-size:150%;text-align:center;">FALL CEILING</div>
+  </div>
+  <div class="img-container">
+   <a   href="https://www.livspace.com/in/design-ideas/living-rooms">
+   <img class="img-size"   src="{% static 'living area.jpg' %}" style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">LIVING AREA</div>
+
+  </div>
+  <div class="img-container">
+   <a target="_blank" href="https://www.architecturaldigest.com/gallery/modern-kitchen-ideas">
+  <img class="img-size"  src="{% static 'kitchen.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">KITCHEN</div>
+
+  </div>
+    <div class="img-container">
+   <a target="_blank" href="https://www.livspace.com/in/design-ideas/bedrooms">
+  <img class="img-size"  src="{% static 'fall.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">MASTER BEDROOM</div>
+    </div>
+    <div class="img-container">
+   <a target="_blank" href="https://www.hackrea.com/stories/interior-partitions-dividers-design-ideas/">
+  <img class="img-size"  src="{% static 'partition.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">PARTITION</div>
+
+  </div>
+    <div class="img-container">
+   <a target="_blank" href="https://www.designcafe.com/blog/home-interiors/cupboard-interior-designs/">
+  <img class="img-size"  src="{% static 'cubboards.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">BOOKSHELF</div>
+</div>
+
+    <div class="img-container">
+   <a target="_blank" href="https://www.architecturaldigest.com/gallery/window-treatment-ideas">
+  <img class="img-size"  src="{% static 'windows.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">WINDOWS</div>
+
+  </div>
+    <div class="img-container">
+   <a target="_blank" href="https://www.livspace.com/in/magazine/gallery-modern-tv-unit-design/">
+  <img class="img-size"  src="{% static 'TVUNIT.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">TV UNIT</div>
+
+  </div>
+<div class="img-container">
+   <a target="_blank" href="https://www.livspace.com/in/design-ideas/wall-paint-designs">
+  <img class="img-size"  src="{% static 'paint.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">WALL PAINTING</div>
+
+  </div>
+    <div class="img-container">
+   <a target="_blank" href="https://www.livspace.com/in">
+  <img class="img-size"  src="{% static 'other.jpg' %}"  style="width:100%"></a>
+   <div class="desc" style="background-color:White;font-size:150%;text-align:center;">MORE DESIGNS</div>
+
+  </div>
+
+
+    <P style="font-size:30px;font-style:Georgia;
+    width:95%;
+    margin:50px;
+    max-width:100%;padding-top:500px;">
+        Interior design for the home involves creating a harmonious and functional living space that reflects the homeowner's personality, lifestyle, and aesthetic preferences. It encompasses the arrangement of furniture, selection of colors, textures, and materials, as well as the incorporation of decorative elements to enhance the overall look and feel of the space. Interior designers often work closely with clients to understand their needs and vision for their home, translating that into a design that is both visually appealing and practical. The goal of interior design for the home is to create a comfortable and inviting environment that meets the needs of the occupants while also reflecting their individual style.
+</P>
+</body>
+
+{% endblock content %}
+
+</html>

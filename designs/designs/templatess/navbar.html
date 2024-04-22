@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>{% block title %}{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+<style>
+    /* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #ffffff;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #2e5b73;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #ffffff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #000;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.3rem;
+}
+</style>
+<!-- Navbar -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-scroll fixed-top shadow-0 border-bottom border-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/" ></a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light" href="/designs">DESIGNS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="/trending_designs">REVIEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="/wishlist">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="/signin">SIGNIN</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link link-light" href="/login">LOGIN</a>
+            </li>
+              <li class="nav-item">
+              <a  href="/contacts" class="btn btn-dark ms-3" >CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+<!-- Navbar -->
+
+
+</body>
+
+  {% block content %}
+  {% endblock %}
+</html>
